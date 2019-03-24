@@ -1,0 +1,108 @@
+Basics on bash operators
+
+"shell" is the GUI of a program
+
+"shell script" is a file to execute.
+.sh file is always written in c or php.
+
+$ echo $SHELL
+Show the shell in use.
+
+$ echo $HOME
+Every time the terminal is opened, we land on the home directory, which is stored in the variable HOME.
+It is the root.
+
+$ pwd
+Show the path of directory.
+
+$ echo $PATH
+When you execute a command from the terminal, e.g.ls, the shell first looks into the directories stored in PATH sequentially for the first executable named ls. It then runs the executable. 
+It show the value of PATH.
+
+$ echo "hello world"
+Repeat the "hello world".
+
+$top
+Show all the process and resourses status of computer.
+
+$htop
+A colorful top.
+
+$ file /bin/bash
+Show the type of files
+
+$ cat hello.txt
+Show the content of file hello.txt
+
+$ head -n 2 hello.txt
+Show the 2 lines of hello.txt from beginning.
+
+$ tail -n 2 hello.txt
+Show the 2 lines of hello.txt from tail.
+
+$ grep hi hello.txt
+Find the word hello in hello.txt.
+
+$ htop &
+Execute htop in background
+
+$ fg
+Bring the background process to foreground.
+
+$ mkdir test
+Creat a directory named test.
+
+$ cd test "
+Move into the directory test
+
+$ touch a.txt
+Creat a.txt file.
+
+$ ls -1 | grep "D"
+Show the name of files with keyword "D" after listing the current directory,
+
+$ ls >ls.out
+Add the output of ls to file ls.out
+If change ls to haha, it is a wrong command. Then it will write the error reminder to ls.out
+
+$ touch myfile
+Create a file named myfile
+
+$ cp myfile myfile_copy
+Creat file named myfile_copy and copy it from myfile
+
+$ mkdir file_copy
+Create a directory named file_copy
+
+$ mv myfile_copy file_copy/
+Move myfile_copy to file_copy directory
+
+Semi-colon Operator (;)
+$ touch myfile; cp myfile myfile_copy; mkdir file_copy; mv myfile_copy file_copy/
+Execute all the command sequentially
+
+AND Operator (&&)
+$ ls && echo ">> Success <<"
+If we replace ; with && between two commands, the second command only runs if the first command succeeds
+
+OR Operator (||)
+Opposite to&&, if||is used between two commands, the second command only runs if the first command fails, i.e., the first command exits with a non-zero status.
+$ haha || echo ">> Failed <<"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
