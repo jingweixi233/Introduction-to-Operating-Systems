@@ -1,0 +1,11 @@
+Compile a C program
+.c file
+pre-processor
+expanded .c file
+compiler
+.s file
+assember
+.o file
+linker
+static/dynamic library add
+.exe file
