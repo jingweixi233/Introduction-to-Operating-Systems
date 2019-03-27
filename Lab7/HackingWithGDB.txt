@@ -1,0 +1,8 @@
+It is so fun.
+In common, the function call will use the stack.
+The stack has the buffer to store data and store the return address of function.
+The hacker will use the bug of stack.
+He will make a big data to make the buffer overflow.
+Then it will overwrite your address of function to return.
+Then the function will return to the program that hacker want you to execute.
+What a clever method to hack attacking.
